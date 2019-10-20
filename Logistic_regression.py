@@ -26,10 +26,10 @@ n_succes = np.count_nonzero(exp["Y"].values == "T")
 n = exp["Y"].shape[0]
 print("During all researhed years success rate was: " +str((n_succes/ n)*100) +"%")
 
-#Fuction showing success rate, returning plot. First parameter is dataset, do not modyfy
+#Function showing success rate, returning plot. First parameter is dataset, do not modyfy
 #Second and third parameter are years showing first and last year wchih will be analyzed
 #Minimal value -1950, max 2017, those are also implide values
-#Last parameter is interval,  please keep it as intiger
+#Last parameter is interval,  please keep it as integer
 
 succes_rate_function.succes_rate(data1, 1980, 2010 , 5)
 
