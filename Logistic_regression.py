@@ -112,7 +112,7 @@ y_pred = classifier.predict(X_test)
 print('Accuracy: {:.2f}'.format(classifier.score(X_test, y_test)))
 
 
-# The "accuracy" scoring is proportional to the number of correct
+# The "accuracy" scoring is number of correct predictions made divided by the total number of predictions made
 # classifications
 rfecv = RFECV(estimator=classifier, step=1, cv=StratifiedKFold(2), scoring='accuracy')
 rfecv.fit(X_train, y_train)
